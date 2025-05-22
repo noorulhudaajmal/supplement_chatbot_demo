@@ -53,6 +53,7 @@ def get_recommendation(user_profile):
        - Each supplement recommendation with explanation
        - Compatibility notes
        - Any relevant warnings or considerations
+    7. At the end don't write Regards, or Your Advisor or any related closure. 
 
     **Important:** Focus on supplements that are specifically beneficial for their demographic and health goal.
     """
