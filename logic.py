@@ -2,9 +2,10 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from supplement_data import supplements, get_supplements_for_goal
+import streamlit as st
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 def get_recommendation(user_profile):
     """
